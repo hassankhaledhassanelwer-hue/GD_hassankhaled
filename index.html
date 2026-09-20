@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hassan Khaled — Graphic Designer, Web Developer & Digital Creator.">
+  <meta property="og:title" content="Hassan Khaled — Creative Portfolio">
+  <meta property="og:description" content="Premium creative portfolio and services.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0b0c0f">
+  <title>Hassan Khaled — Creative Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <canvas class="atom-canvas" id="atomCanvas" aria-hidden="true"></canvas>
+  <header class="navbar" id="navbar">
+    <a class="brand" href="#home" aria-label="Hassan Khaled">
+      <span class="brand-mark">HK</span>
+      <span class="brand-name">Hassan <b>Khaled</b></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" data-i18n="nav.home">الرئيسية</a>
+      <a href="#about" data-i18n="nav.about">عني</a>
+      <a href="#services" data-i18n="nav.services">الخدمات</a>
+      <a href="#portfolio" data-i18n="nav.portfolio">أعمالي</a>
+      <a href="#process" data-i18n="nav.process">العمل</a>
+      <a href="#testimonials" data-i18n="nav.testimonials">آراء العملاء</a>
+      <a href="#faq" data-i18n="nav.faq">الأسئلة</a>
+      <a href="#contact" data-i18n="nav.contact">تواصل</a>
+      <button class="lang-btn" id="langBtn">EN</button>
+      <a class="nav-wa" href="https://wa.me/201091662870" target="_blank" rel="noopener">WhatsApp ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="dot"></span><span data-i18n="hero.eyebrow">متاح لمشاريع جديدة</span></div>
+        <h1 data-i18n="hero.title">أصمم تجارب رقمية <em>تستحق أن تُلاحظ.</em></h1>
+        <p data-i18n="hero.text">مصمم جرافيك ومطور واجهات أمامية أصنع هويات بصرية، مواقع، تصميمات سوشيال ميديا ومحتوى رقمي للعلامات التجارية وصناع المحتوى.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#portfolio" data-i18n="hero.work">شاهد أعمالي</a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="hero.start">ابدأ مشروعًا</a>
+        </div>
+        <div class="hero-meta">
+          <span>Graphic Design</span><i></i><span>Frontend</span><i></i><span>Digital Creator</span>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="visual-card main-card">
+          <div class="visual-top"><span>SELECTED WORK</span><span>HK / 01</span></div>
+          <div class="visual-art">
+            <img class="hero-profile-image" id="heroImage" src="images/profile.jpg" alt="Hassan Khaled">
+            <div class="art-shape shape-one"></div>
+            <div class="art-shape shape-two"></div>
+            <div class="art-text">CREATE<br><small>WITH PURPOSE.</small></div>
+          </div>
+          <div class="visual-bottom"><span>Brand Identity</span><span>↗</span></div>
+        </div>
+        <div class="float-card fc-one">PS <b>01</b></div>
+        <div class="float-card fc-two">HTML <b>05</b></div>
+        <div class="float-card fc-three">AI</div>
+        <div class="float-card fc-four">ILLUSTRATOR</div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-head reveal"><span class="section-kicker">01 — ABOUT</span><h2 data-i18n="about.title">الفكرة الجيدة تبدأ<br><span>بفهم الهدف.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <div class="portrait-placeholder"><span></span><small><img id="aboutImage" src="images/WhatsApp Image 2026-08-31 at 10.37.33 PM.jpeg" alt="مصمم جرافيك"></small></div>
+        </div>
+        <div class="about-copy reveal">
+          <p class="lead" data-i18n="about.lead">أساعد العلامات التجارية وصناع المحتوى على تحويل الأفكار إلى تصميمات وتجارب رقمية واضحة، عملية، ومميزة بصريًا.</p>
+          <p data-i18n="about.body">أجمع بين التفكير التصميمي والتنفيذ التقني لبناء هوية متماسكة من أول بوست وحتى الموقع الإلكتروني.</p>
+          <div class="stats" id="stats"> </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section">
+      <div class="section-head reveal"><span class="section-kicker">02 — SKILLS</span><h2 data-i18n="skills.title">الأدوات التي <span>أبني بها.</span></h2></div>
+      <div class="skills-tabs" id="skillsTabs"></div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="section-head reveal"><span class="section-kicker">03 — SERVICES</span><h2 data-i18n="services.title">اختر الخدمة،<br><span>ونبدأ من هنا.</span></h2><p data-i18n="services.text">خدمات إبداعية مصممة حسب احتياج المشروع، مع سعر بداية ومدة تنفيذ واضحة.</p></div>
+      <div class="services-grid" id="servicesGrid"></div>
+    </section>
+
+    <section class="portfolio section" id="portfolio">
+      <div class="section-head reveal"><span class="section-kicker">04 — PORTFOLIO</span><h2 data-i18n="portfolio.title">أعمال مختارة،<br><span>بتفاصيلها الحقيقية.</span></h2></div>
+      <div class="portfolio-toolbar">
+        <div class="filters" id="filters"></div>
+        <label class="search"><span>⌕</span><input id="projectSearch" type="search" placeholder="ابحث في المشاريع..."></label>
+      </div>
+      <div class="portfolio-grid" id="portfolioGrid"></div>
+      <div class="empty-state" id="portfolioEmpty" hidden data-i18n="portfolio.empty">مشاريعك القادمة يمكن أن تكون هنا.</div>
+    </section>
+
+    <section class="process section" id="process">
+      <div class="section-head reveal"><span class="section-kicker">05 — PROCESS</span><h2 data-i18n="process.title">من الفكرة إلى <span>التسليم.</span></h2></div>
+      <div class="process-grid" id="processGrid"></div>
+    </section>
+
+    <section class="testimonials section" id="testimonials">
+      <div class="section-head reveal testimonial-head"><div><span class="section-kicker">06 — TESTIMONIALS</span><h2 data-i18n="testimonials.title">كلام العملاء،<br><span>تجارب حقيقية.</span></h2></div><div class="testimonial-actions"><button class="section-toggle" id="testimonialsToggle" type="button" aria-expanded="false" aria-controls="testimonialsGrid" aria-label="فتح آراء العملاء"><span>⌄</span></button><button class="section-toggle add-testimonial" id="addTestimonial" type="button" aria-expanded="false" aria-controls="testimonialForm" aria-label="إضافة رأي">+</button></div></div>
+      <form class="testimonial-form" id="testimonialForm" hidden><input id="publicName" required placeholder="اسمك"><input id="publicRole" placeholder="مجالك أو شركتك"><select id="publicRating" aria-label="التقييم"><option value="5">5/5</option><option value="4.9">4.9/5</option><option value="4.8">4.8/5</option><option value="4.7">4.7/5</option><option value="4.5">4.5/5</option></select><textarea id="publicComment" required rows="3" placeholder="اكتب رأيك في التعامل..."></textarea><button class="btn btn-primary" type="submit">إرسال الرأي</button></form>
+      <div class="testimonial-grid" id="testimonialsGrid"></div>
+    </section>
+
+    <section class="faq section" id="faq">
+      <div class="section-head reveal"><span class="section-kicker">07 — FAQ</span><h2 data-i18n="faq.title">أسئلة <span>متكررة.</span></h2></div>
+      <div class="faq-list" id="faqList"></div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-card reveal">
+        <div>
+          <span class="section-kicker">08 — START A PROJECT</span>
+          <h2 data-i18n="contact.title">عندك مشروع<br><span>في بالك؟</span></h2>
+          <p data-i18n="contact.text">اكتب لي احتياجك، وسأحوّل التفاصيل إلى رسالة WhatsApp جاهزة للإرسال.</p>
+        </div>
+        <div class="contact-side">
+          <button class="btn btn-primary btn-large" id="openInquiry" data-i18n="contact.start">ابدأ طلب مشروع ↗</button>
+          <a class="direct-wa" href="https://wa.me/201091662870" target="_blank" rel="noopener">+20 109 166 2870 <span>WhatsApp ↗</span></a>
+          <button class="copy-btn" id="copyWa">نسخ رقم الواتساب</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><a class="brand" href="#home"><span class="brand-mark">HK</span><span class="brand-name">Hassan <b>Khaled</b></span></a><p data-i18n="footer.text">Graphic Designer · Frontend Developer · Digital Creator</p></div>
+    <div class="footer-skills" aria-label="خبرة سنتين"><span>Photoshop <i style="--level:88%"></i></span><span>Illustrator <i style="--level:82%"></i></span><span>Frontend <i style="--level:76%"></i></span></div>
+    <div class="footer-socials" id="socials"></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Hassan Khaled</span><button id="adminOpen">Admin</button></div>
+  </footer>
+
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop"></div><div class="modal-box case-study"><button class="modal-close" data-close>×</button><div id="projectModalContent"></div></div>
+  </div>
+
+  <div class="modal" id="inquiryModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-box inquiry-box">
+      <button class="modal-close" data-close>×</button>
+      <div class="step-head"><span id="stepCounter">01 / 06</span><div class="progress"><b id="progressBar"></b></div></div>
+      <form id="inquiryForm">
+        <div class="inquiry-step active" data-step="1"><span class="section-kicker">STEP 01</span><h2>ماذا تحتاج؟</h2><div class="choice-grid" data-field="service"></div></div>
+        <div class="inquiry-step" data-step="2"><span class="section-kicker">STEP 02</span><h2>تفاصيل المشروع</h2><textarea id="details" rows="7" placeholder="اكتب فكرتك، المطلوب، المقاسات، المنصات..."></textarea></div>
+        <div class="inquiry-step" data-step="3"><span class="section-kicker">STEP 03</span><h2>الميزانية</h2><div class="choice-grid" id="budgetChoices"><button type="button" data-value="150 – 300 جنيه">150 – 300 ج</button><button type="button" data-value="300 – 500 جنيه">300 – 500 ج</button><button type="button" data-value="500 – 750 جنيه">500 – 750 ج</button><button type="button" data-value="750 – 1,000 جنيه">750 – 1,000 ج</button></div></div>
+        <div class="inquiry-step" data-step="4"><span class="section-kicker">STEP 04</span><h2>موعد التسليم</h2><input id="deadline" type="text" placeholder="مثال: خلال أسبوعين"></div>
+        <div class="inquiry-step" data-step="5"><span class="section-kicker">STEP 05</span><h2>بيانات التواصل</h2><div class="form-grid"><input id="clientName" required placeholder="الاسم الكامل *"><input id="clientPhone" required placeholder="رقم WhatsApp *"><input id="clientEmail" type="email" placeholder="البريد الإلكتروني (اختياري)"><input id="reference" type="url" placeholder="رابط مرجعي (اختياري)"></div></div>
+        <div class="inquiry-step" data-step="6"><span class="section-kicker">STEP 06</span><h2>مراجعة الطلب</h2><div class="review" id="review"></div></div>
+        <div class="inquiry-actions"><button type="button" class="btn btn-ghost" id="prevStep">رجوع</button><button type="button" class="btn btn-primary" id="nextStep">التالي ↗</button></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="adminModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-box admin-box">
+      <button class="modal-close" data-close>×</button>
+      <div id="adminLogin">
+        <span class="section-kicker">PRIVATE AREA</span><h2>Admin Dashboard</h2><p>هذا الداشبورد محلي لإدارة نسخة الـ HTML.</p>
+        <input id="adminPassword" type="password" placeholder="كلمة المرور">
+        <button class="btn btn-primary" id="loginAdmin">دخول</button>
+        <small>نسخة Frontend فقط: لا تستخدمها كحماية حقيقية عند النشر.</small>
+      </div>
+      <div id="adminPanel" hidden>
+        <div class="admin-head"><div><span class="section-kicker">CONTENT MANAGER</span><h2>إدارة الموقع</h2></div><button class="btn btn-ghost" id="logoutAdmin">خروج</button></div>
+        <div class="admin-tabs"><button class="active" data-admin-tab="projects">Projects</button><button data-admin-tab="services">Services</button><button data-admin-tab="faqs">FAQs</button><button data-admin-tab="testimonials">Testimonials</button><button data-admin-tab="settings">Settings</button></div>
+        <div id="adminContent"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <a class="mobile-wa" href="https://wa.me/201091662870" target="_blank" rel="noopener">WhatsApp ↗</a>
+  <script src="script.js"></script>
+</body>
+</html>
